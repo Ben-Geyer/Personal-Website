@@ -1,0 +1,112 @@
+.home-component {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../../static/home-background.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  position: relative;
+}
+
+.homepage-upper-padding {
+  padding-top: 15vh;
+}
+
+.bottom-section {
+  position: absolute;
+  bottom: 4%;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+
+.before-name-headline, .name-headline, .personal-description {
+  font-weight: bold;
+  text-align: center;
+}
+
+.name-headline {
+  text-decoration: underline;
+  text-decoration-color: #007bff;
+}
+
+@media only screen and (max-width: 600px) {
+  .before-name-headline {
+    font-size: 1.2em;
+  }
+
+  .name-headline {
+    font-size: 1.8em
+  }
+
+  .personal-description {
+    font-size: 1em
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  .before-name-headline {
+    font-size: 2.2em;
+  }
+
+  .name-headline {
+    font-size: 3.3em
+  }
+
+  .personal-description {
+    font-size: 1.4em
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .before-name-headline {
+    font-size: 3em;
+  }
+
+  .name-headline {
+    font-size: 4em
+  }
+
+  .personal-description {
+    font-size: 2em
+  }
+}
+
+@keyframes bouncing {
+  from, 20%, 53%, 80%, to {
+    animation-timing-function: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+    transform: translate3d(0,0,0);
+  }
+
+  40%, 43% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -1vh, 0);
+  }
+
+  70% {
+    animation-timing-function: cubic-bezier(0.755, 0.050, 0.855, 0.060);
+    transform: translate3d(0, -0.5vh, 0);
+  }
+
+  90% {
+    transform: translate3d(0,-0.2vh,0);
+  }
+}
+
+.bouncing {
+  animation-duration: 2s;
+  animation-name: bouncing;
+  animation-iteration-count: infinite;
+  font-size: 3em;
+  color: white;
+  padding-top: 1vh;
+}
+
+.scroll-down-btn:hover {
+  color: rgba(200, 200, 200, 0.8);
+  cursor: pointer;
+}
+
+.bouncing span {
+  font-size: 6vh;
+}

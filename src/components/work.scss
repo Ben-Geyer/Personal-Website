@@ -1,0 +1,52 @@
+.work-upper-padding {
+  height: 66px;
+}
+
+.work-title {
+  font-weight: bold;
+  text-decoration: underline;
+  text-decoration-color: #007bff;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .work-component .card {
+    font-size: 0.8em
+  }
+
+  .work-component h5 {
+    font-size: 1em;
+  }
+
+  .work-title {
+    font-size: 1.8em;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 1200px) {
+  .work-component .card {
+    font-size: 1em
+  }
+
+  .work-component h5 {
+    font-size: 1.2em;
+  }
+
+  .work-title {
+    font-size: 3.3em;
+  }
+}
+
+@media only screen and (min-width: 1201px) {
+  .work-component .card {
+    font-size: 1.2em
+  }
+
+  .work-component h5 {
+    font-size: 1.4em;
+  }
+
+  .work-title {
+    font-size: 4em;
+  }
+}
