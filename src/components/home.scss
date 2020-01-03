@@ -30,17 +30,23 @@
   text-decoration-color: #007bff;
 }
 
+.contact-info a {
+  padding: 0.2em;
+  font-size: 2em;
+  color: white;
+}
+
 @media only screen and (max-width: 600px) {
   .before-name-headline {
     font-size: 1.2em;
   }
 
   .name-headline {
-    font-size: 1.8em
+    font-size: 1.8em;
   }
 
   .personal-description {
-    font-size: 1em
+    font-size: 1em;
   }
 }
 
@@ -50,11 +56,11 @@
   }
 
   .name-headline {
-    font-size: 3.3em
+    font-size: 3.3em;
   }
 
   .personal-description {
-    font-size: 1.4em
+    font-size: 1.4em;
   }
 }
 
@@ -64,11 +70,11 @@
   }
 
   .name-headline {
-    font-size: 4em
+    font-size: 4em;
   }
 
   .personal-description {
-    font-size: 2em
+    font-size: 2em;
   }
 }
 

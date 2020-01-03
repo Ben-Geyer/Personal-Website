@@ -1,7 +1,9 @@
 import React from "react"
 import {StaticQuery, graphql} from "gatsby"
 import {Container, Row, Col, Card} from "react-bootstrap"
-import 'font-awesome/css/font-awesome.min.css';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faLaptopCode } from "@fortawesome/free-solid-svg-icons"
+import { faGitAlt } from "@fortawesome/free-brands-svg-icons"
 import "./projects.scss"
 
 const images = require.context("../assets");
@@ -20,7 +22,6 @@ export default () => (
               frontmatter {
                 title
                 github_url
-                is_hosted
                 hosted_url
                 image
               }
@@ -38,7 +39,6 @@ export default () => (
           <Row>
             <Col>
               <h1 class="projects-title">Projects</h1>
-              <br />
               <br />
             </Col>
           </Row>
@@ -61,14 +61,18 @@ export default () => (
                     <Row>
                       <Col style={{ padding: 0 }}>
                         <a href={node.frontmatter.github_url}>
-                          <i className="fa fa-git-alt"></i>
+                          <FontAwesomeIcon icon={faGitAlt} />
+                          &nbsp;View GitHub
                         </a>
                       </Col>
                     </Row>
-                    {node.frontmatter.is_hosted && (
+                    {node.frontmatter.hosted_url !== "" && (
                         <Row>
                           <Col style={{ padding: 0 }}>
-                            {node.frontmatter.hosted_url}
+                            <a href={node.frontmatter.hosted_url}>
+                              <FontAwesomeIcon icon={faLaptopCode} />
+                              &nbsp;View Website
+                            </a>
                           </Col>
                         </Row>
                     )}

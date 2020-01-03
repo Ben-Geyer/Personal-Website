@@ -38,7 +38,6 @@ export default () => (
             <Col>
               <h1 class="work-title">Work</h1>
               <br />
-              <br />
             </Col>
           </Row>
 

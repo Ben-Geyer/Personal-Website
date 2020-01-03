@@ -14,7 +14,7 @@ export default () => {
 
     return (
       <div>
-        <Header ids={["home", "about", "work", "projects", "skills", "contact"]}
+        <Header ids={["home", "about", "work", "projects"]}
                 clickRef={homepageScrollRef}
                 clickId="about"
                 homepageId="home" />
@@ -30,12 +30,7 @@ export default () => {
         <div id="projects">
           <Projects />
         </div>
-        <div id="skills">
-          <div style={{height: "100vh"}}></div>
-        </div>
-        <div id="contact">
-          <div style={{height: "100vh"}}></div>
-        </div>
+        <div style={{ paddingBottom: "5vh" }}></div>
       </div>
   )
 }

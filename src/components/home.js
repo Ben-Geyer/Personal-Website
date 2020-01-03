@@ -1,6 +1,9 @@
 import React from "react"
 import {Row, Col, Container} from "react-bootstrap"
 import Pdf from "../assets/resume.pdf"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
+import { faGithubSquare, faLinkedin } from "@fortawesome/free-brands-svg-icons"
 import "./home.scss"
 
 
@@ -22,6 +25,22 @@ export default props => (
             <h5 class="personal-description">
               Computer Science Student
             </h5>
+          </Col>
+        </Row>
+
+        <Row>
+          <Col>
+            <div class="contact-info">
+              <a href="mailto:geyerb@oregonstate.edu">
+                <FontAwesomeIcon icon={faEnvelope} />
+              </a>
+              <a href="https://github.com/Ben-Geyer">
+                <FontAwesomeIcon icon={faGithubSquare} />
+              </a>
+              <a href="https://www.linkedin.com/in/benjamin-geyer-9b3586124/">
+                <FontAwesomeIcon icon={faLinkedin} />
+              </a>
+            </div>
           </Col>
         </Row>
 
