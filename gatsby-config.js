@@ -27,6 +27,15 @@ module.exports = {
     },
     "gatsby-transformer-remark",
     "gatsby-plugin-sass",
-    "gatsby-plugin-offline"
+    "gatsby-plugin-offline",
+    {
+      resolve: "gatsby-plugin-s3",
+      options: {
+        bucketName: "bengeyer.me",
+        protocol: "https",
+        hostname: "www.bengeyer.me",
+        acl: null
+      },
+    },
   ],
 }

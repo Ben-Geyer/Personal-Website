@@ -2,6 +2,7 @@ import React, { useRef } from "react"
 import "bootstrap/dist/css/bootstrap.min.css"
 import "font-awesome/css/font-awesome.min.css"
 import "./index.scss"
+import { Helmet } from "react-helmet"
 import Header from "../components/header.js"
 import Home from "../components/home.js"
 import About from "../components/about.js"
@@ -14,6 +15,9 @@ export default () => {
 
     return (
       <div>
+        <Helmet>
+          <title>Ben Geyer</title>
+        </Helmet>
         <Header ids={["home", "about", "work", "projects"]}
                 clickRef={homepageScrollRef}
                 clickId="about"

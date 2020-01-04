@@ -1,7 +1,7 @@
 {
-  "name": "gatsby-starter-hello-world",
+  "name": "portfolio",
   "private": true,
-  "description": "A simplified bare-bones starter for Gatsby",
+  "description": "A portfolio website to show my projects and experience",
   "version": "0.1.0",
   "license": "MIT",
   "scripts": {
@@ -11,7 +11,8 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "deploy": "gatsby-plugin-s3 deploy"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.26",
@@ -24,6 +25,7 @@
     "gatsby-plugin-manifest": "^2.2.34",
     "gatsby-plugin-offline": "^3.0.30",
     "gatsby-plugin-react-helmet": "^3.1.18",
+    "gatsby-plugin-s3": "^0.3.2",
     "gatsby-plugin-sass": "^2.1.26",
     "gatsby-source-filesystem": "^2.1.43",
     "gatsby-transformer-remark": "^2.6.45",
