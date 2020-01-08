@@ -1,8 +1,8 @@
 ---
-title: "Shoe GAN"
+title: "Shoe Generator"
 github_url: "https://github.com/Ben-Geyer/Shoe-Image-Generator"
-hosted_url: ""
+hosted_url: "https://shoegan.bengeyer.me"
 image: "./shoeGAN.png"
 order: 1
 ---
-yeet
+Programmed and trained a generative adversarial network to design new shoes using python and tensorflow. Collected training data using scrapy and redis. Deployed trained model on AWS Lambda.
