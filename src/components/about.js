@@ -24,12 +24,7 @@ export default () => (
           <Col md={{ order: 1, offset: 1, span: 7 }}>
             <br />
             <p class="about-description">
-              I'm a third-year undergraduate student pursuing a B.S. in Computer Science at
-              Oregon State University. I have experience building products from end-to-end at
-              ShoeBio Inc and the City of Salem IT Department, contributing to the full development
-              stack. Additionally, I have experience working with machine learning algorithms
-              at two research internships. I aspire to work as a Software Engineer and am especially
-              interested in machine learning and distributed systems.
+              A fourth-year Computer Science undergraduate student at Oregon State University with a passion for software engineering and machine learning. I have professional experience creating websites with the ASP.NET MVC framework, developing back-end APIs with Python and Flask, and training machine learning models with both supervised learning and reinforcement learning.
             </p>
           </Col>
         </Row>

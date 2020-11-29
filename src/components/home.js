@@ -37,7 +37,7 @@ export default props => (
               <a href="https://github.com/Ben-Geyer">
                 <FontAwesomeIcon icon={faGithubSquare} />
               </a>
-              <a href="https://www.linkedin.com/in/benjamin-geyer-9b3586124/">
+              <a href="https://www.linkedin.com/in/bengeyer/">
                 <FontAwesomeIcon icon={faLinkedin} />
               </a>
             </div>
