@@ -62,7 +62,7 @@ export default () => (
                       <Col style={{ padding: 0 }}>
                         <a href={node.frontmatter.github_url}>
                           <FontAwesomeIcon icon={faGitAlt} />
-                          &nbsp;View GitHub
+                          &nbsp;View Git Repo
                         </a>
                       </Col>
                     </Row>
